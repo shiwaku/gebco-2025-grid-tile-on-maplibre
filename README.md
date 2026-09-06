@@ -93,7 +93,7 @@ gdal2tiles.py work/gebco_2025_sub_ice_3857_terrainrgb.tif tiles/gebco_2025_grid_
   map.addSource("dem-tiles", {
     type: "raster-dem",
     tiles: [
-      "https://shiworks2.xsrv.jp/raster-tiles/gebco/gebco_2025_grid_tile_terrain-rgb/{z}/{x}/{y}.png",
+      "https://shi-works.com/raster-tiles/gebco/gebco_2025_grid_tile_terrain-rgb/{z}/{x}/{y}.png",
     ],
     attribution:
       '<a href="https://www.gebco.net/data-products/gridded-bathymetry-data">GEBCO 2025 Grid (sub-ice topo/bathy)を加工して作成</a>',
@@ -204,7 +204,7 @@ gdal2tiles.py work/gebco_2025_sub_ice_3857_terrainrgb.tif tiles/gebco_2025_grid_
 ```js
   // 標高タイルソース
   const demSource = new mlcontour.DemSource({
-    url: "https://shiworks2.xsrv.jp/raster-tiles/gebco/gebco_2025_grid_tile_terrain-rgb/{z}/{x}/{y}.png",
+    url: "https://shi-works.com/raster-tiles/gebco/gebco_2025_grid_tile_terrain-rgb/{z}/{x}/{y}.png",
     encoding: "mapbox",
     minzoom: 0,
     maxzoom: 9,
